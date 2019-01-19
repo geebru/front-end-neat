@@ -1,13 +1,13 @@
 {
   "title": "Front-end, Neat",
-  "url": "https://myurl.com/",
+  "url": "https://frontendneat.com/",
   "description": "Thoughts from a front-end developer making the web for humans.",
   "feed": {
     "subtitle": "Thoughts from a front-end developer making the web for humans.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "url": "https://myurl.com/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "url": "https://myfrontendneaturl.com/feed/feed.xml",
+    "id": "https://frontendneat.com/"
   },
   "author": {
     "name": "Greg Bruening",
