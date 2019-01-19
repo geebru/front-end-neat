@@ -1,0 +1,11 @@
+:root {
+  --color-brand--whiskey: rgb(203, 156, 95);
+  --color-brand--evergreen: rgb(94, 108, 83);
+
+  --color-neutral--white: hsl(0, 0%, 100%);
+  --color-neutral--eggshell: hsl(0, 0%, 80%);
+  --color-neutral--sweats: hsl(0, 0%, 60%);
+  --color-neutral--statue: hsl(0, 0%, 40%);
+  --color-neutral--raven: hsl(0, 0%, 20%);
+  --color-neutral--black: hsl(0, 0%, 0%);
+}
