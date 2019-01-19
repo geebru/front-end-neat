@@ -29,7 +29,7 @@
     "scripts:babel": "babel src/js -d dist/js --ignore vendor/ --copy-files",
     "scripts": "run-s scripts:*",
     "styles:stylelint": "stylelint 'src/css/**/*.css'",
-    "styles:postcss": "postcss src/css/*.css --map --no-map -d dist/css",
+    "styles:postcss": "postcss src/css/*.css --map --no-map -d ../_site/css/",
     "styles": "run-s styles:*",
     "assets:images": "imagemin src/assets/images/**/* -o=dist/assets/images",
     "assets:svgs": "imagemin src/assets/svgs/**/* -p=svgo -o=dist/assets/svgs",
