@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
   <body>
-    <header class="container" role="banner">
-      <h1><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-      <nav role="navigation">
-        <ul>
-          {%- for nav in collections.nav | reverse -%}
-          <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
-          {%- endfor -%}
-        </ul>
-      </nav>
+    <header class="banner" role="banner">
+      <div class="contain">
+        <h1 class="banner__title"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+        <p class="banner__subtitle">{{ metadata.subtitle }}</p>
+        <nav class="banner__nav" role="navigation">
+          <ul>
+            {%- for nav in collections.nav | reverse -%}
+            <li class="nav__item{% if nav.url == page.url %} is-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main {% if templateClass %} class="{{ templateClass }}" {% endif %}>
