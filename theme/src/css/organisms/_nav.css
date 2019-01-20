@@ -1,0 +1,10 @@
+.banner__nav ul {
+  display: flex;
+  justify-content: center;
+
+  & .nav__item {
+    display: block;
+    font-size: .9rem;
+    padding: .25em 1em;
+  }
+}

@@ -1,0 +1,22 @@
+header[role="banner"] {
+  background-color: var(--color-brand--charade);
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.banner__title {
+  font-size: 2.25rem;
+  font-weight: 900;
+
+  & a {
+    color: var(--color-brand--picton);
+  }
+}
+
+.banner__subtitle {
+  color: var(--color-neutral--sweats);
+  font-size: .9rem;
+  margin-bottom: 1em;
+}
