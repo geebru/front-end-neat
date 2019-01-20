@@ -11,12 +11,12 @@ header[role="banner"] {
   font-weight: 900;
 
   & a {
-    color: var(--color-brand--picton);
+    color: var(--color-brand--wheat);
   }
 }
 
 .banner__subtitle {
-  color: var(--color-neutral--sweats);
+  color: var(--color-brand--ebb);
   font-size: .9rem;
   margin-bottom: 1em;
 }
