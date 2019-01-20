@@ -1,6 +1,6 @@
 ---
-title: Who you _really_ need to convince to develop more inclusively
-description: Accessibility is a team-wide effort. Convincing those not doing the work is the hardest part.
+title: Who you really need to convince to develop more inclusively
+description: Accessibility goes beyond your own team
 date: 2018-08-23
 tags:
   - accessibility
