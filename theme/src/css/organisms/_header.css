@@ -7,11 +7,15 @@ header[role="banner"] {
 }
 
 .banner__title {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-weight: 900;
 
   & a {
     color: var(--color-brand--wheat);
+  }
+
+  @media (min-width: 45rem) {
+    font-size: 2.5rem;
   }
 }
 
