@@ -7,11 +7,12 @@
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="banner" role="banner">
       <div class="contain">
-        <h1 class="banner__title"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+        <p class="banner__title"><a href="{{ '/' | url }}">{{ metadata.title }}</a></p>
         <p class="banner__subtitle">{{ metadata.subtitle }}</p>
         <nav class="banner__nav" role="navigation">
           <ul>
@@ -32,10 +33,17 @@
     <footer role="contentinfo">
       <div class="contain">
         <p class="copyright">&copy; 2019</p>
+        <p class="attribution">Built with 11ty &amp; Netlify</p>
         <ul class="social">
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Github</a></li>
-          <li><a href="">LinkedIn</a></li>
+          <li>
+            <a href="http://twitter.com/geebru" title="Follow me on Twitter"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gbruening/" title="Connect with me on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/geebru" title="Judge my code on GitHub"><i class="fab fa-github"></i></a>
+          </li>
         </ul>
       </div>
     </footer>
