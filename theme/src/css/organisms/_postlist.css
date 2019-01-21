@@ -1,13 +1,13 @@
 .postlist {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .postlist__item {
   position: relative;
 
   & + .postlist__item {
-    margin-top: 3rem;
+    margin-top: 3em;
   }
 }
 
@@ -19,7 +19,7 @@
 }
 
 .postlist__link {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 700;
   margin-bottom: .25em;
   position: relative;
@@ -31,7 +31,7 @@
     height: 3px;
     left: -25px;
     position: absolute;
-    top: -.75rem;
+    top: -.75em;
     transform: scaleY(1);
     transform-origin: top left;
     transition: transform .35s;
@@ -49,14 +49,14 @@
 .postlist__meta {
   align-items: center;
   display: flex;
-  font-size: .75rem;
+  font-size: .75em;
   font-style: italic;
 
   & > p {
     color: var(--color-neutral--eggshell);
-    font-size: .5rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    font-size: .5em;
+    margin-right: 1em;
+    margin-left: 1em;
   }
 }
 
@@ -70,7 +70,7 @@
   padding: .25em;
 
   & + .postlist__tag {
-    margin-left: .5rem;
+    margin-left: .5em;
   }
 
   &:hover,

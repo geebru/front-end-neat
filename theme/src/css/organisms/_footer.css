@@ -1,5 +1,6 @@
 footer {
   & .contain {
+    align-items: center;
     border-top: 1px solid var(--color-neutral--eggshell);
     display: flex;
     flex-flow: column wrap;
@@ -9,7 +10,6 @@ footer {
     text-align: center;
 
     @media (min-width: 45rem) {
-      align-items: center;
       justify-content: space-between;
       flex-direction: row;
     }

@@ -32,9 +32,7 @@
     color: var(--color-brand--picton);
   }
 
-  @media (min-width: 45rem) {
-    & p {
-      margin: 0;
-    }
+  & p {
+    margin: 0;
   }
 }
