@@ -6,27 +6,8 @@
 .postlist__item {
   position: relative;
 
-  &::before {
-    background-color: var(--color-brand--wheat);
-    content: "";
-    height: 3px;
-    left: -25px;
-    position: absolute;
-    top: -.75rem;
-    transform: scaleY(1);
-    transform-origin: top left;
-    transition: transform .35s;
-    width: 50px;
-    z-index: -1;
-  }
-
   & + .postlist__item {
     margin-top: 3rem;
-  }
-
-  &:hover::before,
-  &:focus-within::before {
-    transform: scaleY(20);
   }
 }
 
@@ -41,7 +22,27 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: .25em;
+  position: relative;
   text-decoration: underline;
+
+  &::before {
+    background-color: var(--color-brand--wheat);
+    content: "";
+    height: 3px;
+    left: -25px;
+    position: absolute;
+    top: -.75rem;
+    transform: scaleY(1);
+    transform-origin: top left;
+    transition: transform .35s;
+    width: 50px;
+    z-index: -1;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: scaleY(18);
+  }
 }
 
 
