@@ -1,0 +1,40 @@
+.tmpl-post {
+  & * + * {
+    margin-top: 1.25em;
+  }
+
+  & p {
+    line-height: 1.5;
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+
+  & code {
+    background-color: hsla(0, 0%, 100%, .85);
+    padding: .25em .5em;
+  }
+}
+
+.post__footer-nav {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  & a:hover,
+  & a:focus {
+    text-decoration: underline;
+  }
+
+  & i {
+    color: var(--color-brand--picton);
+  }
+
+  @media (min-width: 45rem) {
+    & p {
+      margin: 0;
+    }
+  }
+}

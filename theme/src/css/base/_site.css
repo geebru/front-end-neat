@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-brand--ebb);
+  color: var(--color-neutral--raven);
+  font-family: var(--type-font--merriweather);
+  font-weight: 400;
+}

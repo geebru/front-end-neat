@@ -1,0 +1,41 @@
+.banner__nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__item {
+  display: block;
+  font-size: .9rem;
+  padding: .25em 1em;
+
+  & a {
+    display: block;
+    color: var(--color-brand--picton);
+    overflow: hidden;
+    padding: .25em 1em;
+    position: relative;
+    transition: color .15s;
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: var(--color-brand--picton);
+      bottom: 0;
+      height: 2px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      transform: translateX(-100%);
+      transition: transform .35s;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      transform: translateX(0);
+    }
+  }
+
+  &.is-active a::before {
+    transform: translateX(0);
+  }
+}
