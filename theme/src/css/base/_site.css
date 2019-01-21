@@ -10,6 +10,7 @@ html {
 
 body {
   background-color: var(--color-brand--ebb);
+  color: var(--color-neutral--raven);
   font-family: var(--type-font--merriweather);
   font-weight: 400;
 }
