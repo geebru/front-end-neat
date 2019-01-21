@@ -1,10 +1,12 @@
 .social {
   display: flex;
+  font-size: 1em;
+  margin-top: 1em;
 
   & a {
     display: block;
     color: var(--color-brand--denim);
-    padding: .25em;
+    padding: .25em .5em;
     transform: scale(1);
     transition:
       color .15s,
@@ -15,5 +17,9 @@
       color: var(--color-brand--picton);
       transform: scale(1.1);
     }
+  }
+
+  @media (min-width: 45rem) {
+    margin-top: 0;
   }
 }
