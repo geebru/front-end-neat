@@ -2,7 +2,10 @@
 permalink: /tags/
 layout: layouts/home.njk
 ---
-<h1>Tags</h1>
+
+<h1 class="page-title">Tags</h1>
+
+<p>Browse for posts based on their tags:</p>
 
 {% for tag in collections.tagList %}
   {% set tagUrl %}/tags/{{ tag }}/{% endset %}
