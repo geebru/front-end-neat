@@ -2,14 +2,17 @@
 {% for post in postslist | reverse %}
   <li class="postlist__item{% if post.url == url %} is-active{% endif %}">
     <a href="{{ post.url | url }}" class="postlist__link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <time class="postlist__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    <div class="postlist__tags">
-      {% for tag in post.data.tags %}
-        {%- if tag != "posts" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" class="postlist__tag">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
+    <div class="postlist__meta">
+      <time class="postlist__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <p><i class="fas fa-glass-whiskey"></i></p>
+      <div class="postlist__tags">
+        {% for tag in post.data.tags %}
+          {%- if tag != "posts" -%}
+          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+          <a href="{{ tagUrl | url }}" class="postlist__tag">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %}
+      </div>
     </div>
   </li>
 {% endfor %}
