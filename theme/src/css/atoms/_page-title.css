@@ -3,4 +3,8 @@ h1.page-title {
   font-weight: 700;
   margin-top: 2em;
   margin-bottom: 1em;
+
+  @media (min-width: 40rem) {
+    font-size: 2em;
+  }
 }
